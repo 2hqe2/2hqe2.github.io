@@ -1,0 +1,140 @@
+<!--
+Danny Le
+2024-04-14
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Ongoing Projects</title>
+		<link href="myersReset.css" rel="stylesheet" /> <!-- Used Eric Myers' Reset Style Sheet -->
+		<link href="PageLayout.css" rel="stylesheet" />
+		
+		<style>
+			/* Base */
+			main {
+				height : 100%;
+			}
+			
+			/* Buttons/Links */
+			main figure {
+				display : none;
+			}
+			main ul li {
+				margin : auto;
+				border : 2.5px solid white;
+				width : 50%;
+				padding : 0%;	
+			}
+			main ul > li:hover {
+				border-color : black;
+				background-color : white;s
+				color : black;
+			}
+			main ul li:hover > figure {
+				display : block;
+				border-color : black;
+				background-color : black;
+			}
+			ul > li > a {
+				text-shadow : 0px 0px;
+			}
+			
+			/* Button/Img & Tooltip */
+			figcaption > p {
+				color : black;
+			}
+			img {
+				height : 65%;
+				width : 65%;
+			}		
+			
+			/* Screen Fixies */
+			@media screen and (max-width : 455px){
+				figcaption > p {
+					font-size : 100%;
+				}
+			}
+		
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>Ongoing/Completed Projects</h1>
+			<nav> <!-- nav for top navigation bar to other webpages, including it's own host -->
+				<li><a href="HomePage.html">Home Page</a></li>
+				<li><a href="About.html">About</a></li>
+				<li><a href="OngoingWorks.html">Ongoing Projects</a></li>
+			</nav>
+		</header>
+		<main>
+			<h3>Previous Works</h3>
+			<ul>
+				<li>
+					<a href="Assignment 3/Assignment3.html" target="_blank">Assignment 3</a>
+					<figure>
+						<img src="Img/as3img.png" alt="A preview of Assignment 3" />
+						<figcaption>
+							<p>My first assignment made from scratch. It is about my favourite food.</p>
+						</figcaption>
+					</figure>
+				</li>
+				<li>
+					<a href="Assignment 4/Assignment4.html" target="_blank">Assignment 4</a>
+					<figure>
+						<img src="Img/as4img.png" alt="A preview of Assignment 4" />
+						<figcaption>
+							<p>A website about my favourite sport. We were supposed to position the figures away from the text.</p>
+						</figcaption>
+					</figure>
+				</li>
+				<li>
+					<a href="Assignment 8/Assignment8.html" target="_blank">Assignment 8</a>
+					<figure>
+						<img src="Img/as8img.png" alt="A preview of Assignment 8" />
+						<figcaption>
+							<p>
+							My first webform for this program. It allows the user to input information into it. It currently asks for personal, location, & school
+							information.							
+							</p>
+						</figcaption>
+					</figure>
+				</li>
+				<li>
+					<a href="Assignment 9/Assignment9.html" target="_blank">Assignment 9</a>
+					<figure>
+						<img src="Img/as9img.png" alt="A preview of Assignment 9" />
+						<figcaption>
+							<p>
+							A small website about me. I was meant to have my website adapt to the screen size of any device, though mostly for computers to iPhones.
+							Supposedly, the 3 columns will slowly combine to one if you make the window smaller on a computer screen.
+							</p>
+							<p>
+							You may already have seen this effect on this website already with my navigation bar.
+							</p>
+						</figcaption>
+					</figure>
+				</li>
+				<li>
+					<a href="Assignment 10/Assignment10.html" target="_blank">Assignment 10</a>
+					<figure>
+						<img src="Img/as10img.png" alt="A preview of Assignment 10" />
+						<figcaption>
+							<p>My last assignment from this program, one that is about my supposedly favourite band.</p>
+							<p>
+							I was instructed to have my website interactible by using css. Tool tips will appear upon hovering over an img, utilizing text-shadow & transform, etc.
+							</p>
+							<p>
+							You probably already noticed the effects it has.
+							</p>
+						</figcaption>
+					</figure>
+				</li>
+			</ul>
+		</main>
+		<footer>
+			<a href="ContactForm.html">Contact Me!</a>
+		</footer>
+	</body>
+</html>

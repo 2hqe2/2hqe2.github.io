@@ -1,0 +1,137 @@
+/*
+Danny Le
+2024-04-14
+
+Must implement the skills and methods that have been covered in this course.
+There will be a mark reduction for any aspects of your project that implemented skills not learned in this course.
+I unfortunately do not know how to upload to my scweb.ca account.
+Though I managed to use folders after some thinking, to which I need to use paths.
+Such as: Folder/Folder/File
+
+Table of Contents:
+1. Overall Template for all Pages
+2. Header & Navigation Buttons
+3. Main
+4. Footer
+5. Figures
+6. Responsive Design
+*/
+
+/* 1. */
+	@font-face {
+		font-family : Pixelify Sans;
+		src : url("PixelifySans-VariableFont_wght.ttf") format("truetype");
+	}
+	html {
+		height : 100%;
+	}
+	body {
+		margin : auto;
+		max-width : 1400px;
+		text-align : center;
+		background : linear-gradient(to bottom right, red, yellow, blue);
+		background-attachment : fixed;
+		color : white;
+		padding : 2%;
+		position : relative;
+		font-family : Pixelify Sans;
+	}
+	header, main, footer {
+		background-color : black;	
+		border : 5px outset white;
+		margin : 1%;
+		padding : 1%;
+		
+	}
+	p {
+		font-size : 15px;
+	}
+	h3 {
+		font-size : 30px;
+	}
+
+/* 2. */
+	header {
+		background-color : black;
+		max-width : 100%;
+	}
+	header > h1 {
+		text-shadow : 2.5px 2.5px gray;
+	}
+	
+	header > nav {
+		overflow : hidden;
+	}
+	header > nav > li {
+		display : block;
+		width : 30.85%;
+		float : left;
+		background-color : black;
+		border : 2.5px solid white;
+		margin : 1%;
+	}
+	header > nav > li:hover {
+		background-color : white;
+		border : 2.5px solid black;
+		color : rgb(255, 100, 100);
+		transform : scale(1.05, 1.05);
+	}
+	header > nav > li > a, a {
+		display : block;
+		text-decoration : none;
+		color : rgb(100, 100, 255);
+		padding : 2.5%;
+	}
+	header > nav > li > a:hover, a:hover {
+		color : rgb(255, 100, 100);
+	}
+
+
+/* 3. */
+	main {
+		font-size : 25px;
+		height : 100%;
+		text-shadow : 2.5px 2.5px gray;		
+	}
+	
+/* 4. */
+	footer {
+		padding : 0px;
+	}
+	footer:hover {
+		display : block;
+		background-color : white;
+		border : 5px solid black;
+		color : rgb(255, 100, 100);
+	}
+	
+/* 5. */
+	figcaption {
+		display : none;
+	}
+	figure:hover {
+		transform : rotate(-5deg);
+	}
+	figure:hover > figcaption {
+		display : block;
+		transform : rotate(10deg);
+	}
+
+/* 6. */
+@media screen and (max-width : 910px){
+	header > nav > li {
+		width : 75%;
+		margin-left : 12%;
+	}
+	main {
+		height : 100%;
+	}	
+}
+@media screen and (max-width : 455px){
+	h3 {
+		font-size : 200%; 
+	}
+	header, main, footer {
+		font-size : 50%;
+	}
+}		
