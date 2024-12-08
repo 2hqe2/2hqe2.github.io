@@ -10,10 +10,11 @@ Such as: Folder/Folder/File
 
 Table of Contents:
 1. Overall Template for all Pages
-2. Header & Navigation Buttons
-3. Main
-4. Footer
-5. Responsive Design
+2. Navigation Buttons 
+3. Header
+4. Main
+5. Footer
+6. Responsive Design
 */
 
 /* 1. */
@@ -50,19 +51,7 @@ Table of Contents:
 	}
 
 /* 2. */
-	header {
-		background-color : black;
-		max-width : 100%;
-	}
-	header > h1 {
-		text-shadow : 2.5px 2.5px gray;
-	}
-	
-	header > nav {
-		overflow : hidden;
-		display : flex;
-	}
-	header > nav > li {
+	nav > li {
 		display : block;
 		width : 30.85%;
 		float : left;
@@ -70,41 +59,49 @@ Table of Contents:
 		border : 2.5px solid white;
 		margin : 1%;
 	}
-	header > nav > li:hover {
+	nav > li:hover {
 		background-color : white;
 		border : 2.5px solid black;
 		color : rgb(255, 100, 100);
 	}
-	header > nav > li > a, a {
+	nav > li > a, ul > li > a {
 		display : block;
 		text-decoration : none;
 		color : rgb(100, 100, 255);
 		padding : 2.5%;
 	}
-	header > nav > li > a:hover, a:hover {
+	nav > li > a:hover, ul > li > a:hover {
 		color : rgb(255, 100, 100);
 	}
 
-
 /* 3. */
+	header {
+		background-color : black;
+		max-width : 100%;
+	}
+	header > h1 {
+		text-shadow : 2.5px 2.5px gray;
+	}
+	header > nav {
+		overflow : hidden;
+		display : flex;
+	}
+	header > nav > li {
+		width : 50%;
+	}
+
+/* 4. */
 	main {
 		font-size : 25px;
 		height : 100%;
-		text-shadow : 2.5px 2.5px gray;		
-	}
-	
-/* 4. */
-	footer {
-		padding : 0px;
-	}
-	footer:hover {
-		display : block;
-		background-color : white;
-		border : 5px solid black;
-		color : rgb(255, 100, 100);
 	}
 	
 /* 5. */
+	footer > article {
+		margin : auto;
+	}
+	
+/* 6. */
 @media screen and (max-width : 910px){
 	header > nav > li {
 		width : 75%;
