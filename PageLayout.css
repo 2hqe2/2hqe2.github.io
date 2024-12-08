@@ -100,6 +100,10 @@ Table of Contents:
 	footer > article {
 		margin : auto;
 	}
+	footer > article > a {
+		text-decoration : none;
+		color : white;
+	}
 	
 /* 6. */
 @media screen and (max-width : 910px){
