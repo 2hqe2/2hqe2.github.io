@@ -7,11 +7,28 @@ Danny Le
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<title>Danny's Portfolia</title>
+		<title>Danny's Portfolio</title>
 		<link href="myersReset.css" rel="stylesheet" /> <!-- Used Eric Myers' Reset Style Sheet -->
 		<link href="PageLayout.css" rel="stylesheet" />
 		<style>
-			
+			.column {
+				width : 33.33%;
+				border : 2.5px solid white;
+			}
+			#c1 > ul > li {
+				text-align : left;
+				font-size : 75%;
+				margin-top : 10%;
+			}
+			#c2 > ul > li {
+				text-align : left;
+				font-size : 75%;
+				margin-top : 1%;
+			}
+			img {
+				max-height : 100%;
+				max-width : 75%;
+			}
 		</style>
 	</head>
 	<body>
@@ -24,6 +41,45 @@ Danny Le
 		</header>
 		<main>
 			<h3>Hello!</h3>
+			<p>
+				My name is Danny Le<br>
+				Welcome to My Portfolio!
+			</p>
+			<aside style="display : flex">
+				<section class="column" id="c1">
+					<p>I like...</p>
+					<ul style="float : left">
+						<li>Playing Video Games</li>
+						<li>Listening to Music</li>
+						<li>Creating Small Applications</li>
+						<li>Imagination</li>
+						<li>The Colors: Black, Blue, & White</li>
+					</ul>
+				</section>
+				<section class="column" id="c2">
+					<p>
+						I am currently a college student at Saint Clair College
+						who is enrolled in Computer Programming.
+						<br><br>
+						I strive to make my imagination real for everyone to witness & interact with one day, 
+						but I believe I still need more experience if I want to get to that level of development.
+						<br><br>
+						Until now, I have learned so many things such as:
+						<ul>
+							<li>Database Connections</li>
+							<li>Usage of Git Repositories</li>
+							<li>Soft Skills</li>
+							<li>Analysis & Design</li>
+							<li>Computer Frameworks</li>
+						</ul>
+					</p>
+				</section>
+				<section class="column" id="c3">
+					<p>My Favourite Drink!</p>
+					<img src="Milkshake.jpg" alt="Chocolate Milkshake" />
+				</section>
+			</aside>
+		
 		</main>
 		<footer>
 			Contact Me!
