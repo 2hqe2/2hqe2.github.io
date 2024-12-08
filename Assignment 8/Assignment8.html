@@ -1,0 +1,121 @@
+<!DOCTYPE html />
+
+<!--
+Danny le
+2024-03-19
+-->
+
+<html lang="en">
+	<head meta="UTF-8">
+		<title>Form Testing in Process</title>
+		<link href="CSS8.css" rel="stylesheet" />
+	</head>
+	<body>
+	
+	<h1>Test Form 101</h1>
+	
+	<!-- Unfortunately, I do not know where the action should lead. -->
+	<form method="post">
+		<label><h5>Personal Information</h5>
+			<section>
+				<label>First Name
+					<input type="text" name="firstName" placeholder="Insert First Name" />
+				</label>
+			</section>
+			<section>
+				<label>Last Name
+					<input type="text" name="lastName" placeholder="Insert Last Name" />
+				</label>
+			</section>
+			<section>
+				<label>Date of Birth
+					<input type="Date" name="birthday" placeholder="Insert Date of Birth" />
+				</label>
+			</section>
+			<section>
+				<label>Email
+					<input type="email" name="email" placeholder="Insert Email" required />
+				</label>	
+			</section>
+			<section>
+				<label>Phone number 
+					<input type="tel" name="phone" placeholder="Insert Phone #" required />
+				</label>
+			</section>
+		</label>
+		<label><h5>Location Information</h5>
+			<section>
+				<label>Street Address 
+					<input type="Text" name="address" placeholder="Insert Address" />
+				</label>
+			</section>
+			<section>
+				<label>City 
+					<input type="Text" name="city" placeholder="Insert City" />
+				</label>
+			</section>
+			<section>
+				<label>Province 
+					<input type="Text" name="province" placeholder="Insert Province" />
+				</label>
+			</section>
+			<section>
+				<label>Postal code 
+					<input type="Text" name="postal" placeholder="Insert Postal Code" />
+				</label>
+			</section>
+		</label>
+		<label><h5>School Information</h5>
+			<section>
+				<label>Enrolling for Evening or Weekend Courses? <!-- Can only select 1 -->
+					<section>
+						<label>Evening
+							<input type="radio" name="time" value="Evening" />
+						</label>
+						<label>Weekend
+							<input type="radio" name="time" value="Weekend" />
+						</label>
+					</section>
+				</label>
+			</section>
+			<section>
+				<label>What course are you enrolled in?
+					<section>
+						<select name="course">
+							<option value="0">Advanced Python - ITCC 353</option>
+							<option value="1">Java Advanced - ITCC 118</option>
+							<option value="2">Fundamentals of Cloud Computing - ITCC  630</option>
+							<option value="3">Introduction to Project JavaScript - ITCC 138</option>
+							<option value="4">Programming in C - ITCC 229</option>
+							<option value="5">Web Design for Mobile Applications - ITCC 182</option>
+						</select>
+					<section>
+				</label>
+			</section>
+		</label>
+		<label><h5>The End</h5>
+			<section>
+				<figure>
+					<figcaption>How would you rate this survey?</figcaption>
+					<img src="hate.jpg" />
+					<input type="range" name="rating" min="0" max="11" />
+					<img src="enjoy.jpg" />
+				</figure>
+			</section>
+		</label>
+		
+		<section>
+			<input type="reset" value="Clear" />
+			<input type="submit" value="Submit" />
+		</section>
+		
+		<section>
+			<p>Image Sources</p>
+			<a href="https://classroomclipart.com/clipart-view/Clipart/Emotions/smiley-face-character-happy-expression-clipart-2_jpg.htm" target="_blank">Classroom Clipart</a><p>
+			<a href="https://thewalrus.ca/why-twitter-wants-you-to-hate/" target="_blank">The Walrus</a>
+			</p>
+		</section>
+	</form>
+	
+	</body>
+</html>

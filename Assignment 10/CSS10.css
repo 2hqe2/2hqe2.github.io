@@ -1,0 +1,108 @@
+/*
+Danny Le
+2024-04-05
+
+Contents:
+1. Overall Body
+2. Header & Main
+3. Header h1
+4. Main (Including Article & Section)
+5. Figures
+6. Responsive Design
+*/
+
+/* 1. */
+
+	@font-face {
+		font-family : Big Shoulders Stencil Text;
+		src : url("BigShouldersStencilText-VariableFont_wght.ttf") format("truetype");
+	}
+
+	* {
+		box-sizing : border-box;
+	}
+	body {
+		max-width : 1200px;
+		background : linear-gradient(to bottom right, red, orange, yellow, green, blue, purple);
+		text-align : center;
+		display : block;
+		margin : auto;
+		font-family : Big Shoulders Stencil Text;
+	}
+	
+	h3 {
+		font-size : 250%;
+	}
+	
+	p {
+		font-size : 150%;
+	}
+	
+/* 2. */
+	header, main {
+		background-color : white;
+		border : 10px outset black;
+	}
+	header {
+		margin-top : 5%;
+	}
+	
+	main {
+		height : 80%;
+	}
+
+/* 3. */
+	header > h1 {
+		font-size : 50px;
+	}
+
+	
+/* 4. */	
+	main > article, main > section {
+		float : left;
+		width : 50%;
+	}
+	
+/* 5. */
+
+	figure {
+		width : 45%;
+		margin : auto;
+		box-shadow : 25px 15px 25px black;
+		
+	}
+	figure > img {
+		height : 20%;
+		width : 100%;
+	}
+	figure > figcaption {
+		display : none;
+	}
+	figure:hover {
+		transform:rotate(10deg);
+	}
+	figure:hover > figcaption {
+		display : block;
+		z-index : 10;
+		background-color : black;
+		color : white;
+	}
+	figure > figcaption > a {
+		color : rgb(100, 100, 255);
+	}
+	
+/* 6. */
+@media screen and (max-width : 500px){
+	
+	main {
+		height : 150%;
+	}
+	main > article, main > section {
+		float : none;
+		width : 100%;
+	}
+	main > section {
+		margin-top : 15%;
+	}
+
+}

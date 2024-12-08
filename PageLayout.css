@@ -35,13 +35,27 @@ Table of Contents:
 		border : 5px outset white;
 		margin : 1%;
 		padding : 1%;
-		
+	}
+	header:hover, main:hover, footer:hover {
+		background-color : white;	
+		color : black;
+		border : 5px outset black;
 	}
 	p {
 		font-size : 75%;
 	}
 	h3 {
 		font-size : 30px;
+	}
+	
+	/* Wanted to add animations to appear more responsive/'natural', got code from https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/ */
+	@keyframes fadeInAnimation {
+		0% {
+			opacity : 0;
+		}
+		100% {
+			opacity : 1;
+		}
 	}
 
 /* 2. */
@@ -72,6 +86,11 @@ Table of Contents:
 	header {
 		background-color : black;
 		max-width : 100%;
+		
+		/* Code from https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/ */
+		animation: fadeInAnimation ease 1s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
 	}
 	header > h1 {
 		text-shadow : 2.5px 2.5px gray;
@@ -88,17 +107,31 @@ Table of Contents:
 	main {
 		font-size : 25px;
 		height : 100%;
+		
+		/* Code from https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/ */
+		animation: fadeInAnimation ease 2s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
 	}
 	
 /* 5. */
+	footer {
+		
+		/* Code from https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/ */
+		animation: fadeInAnimation ease 3s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+	}
 	footer > article {
 		margin : auto;
 	}
 	footer > article > a {
 		text-decoration : none;
-		color : white;
+		color : rgb(100, 100, 255);
 	}
-	
+	footer > article > a:hover {
+		color : rgb(255, 100, 100);
+	}
 /* 6. */
 @media screen and (max-width : 910px){
 	header > nav > li {
@@ -117,3 +150,17 @@ Table of Contents:
 		font-size : 50%;
 	}
 }		
+
+
+/*
+References:
+
+Danny Le. (2024-04-14). Final Project
+This was a final project from last semester, now used as a template for my portfolio.
+
+GeeksforGeeks. (2024b, October 24). How to create fade-in effect on page load using CSS? https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/ 
+Used for animations in an attempt to be of 'good quality'.
+
+
+*/
+
