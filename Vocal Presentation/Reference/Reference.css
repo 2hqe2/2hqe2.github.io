@@ -1,0 +1,28 @@
+/*
+Danny Le
+2024-12-06
+
+Contents:
+1. Overall Body
+2. Header & Main
+
+
+*/
+
+header {
+	margin-top : 25px;
+}
+
+nav {
+	float : left;
+}
+
+main {
+	display : flex;
+}
+
+.odd {
+	color : rgb(255, 0, 0);
+}
+
+
